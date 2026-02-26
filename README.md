@@ -1,4 +1,4 @@
-Data Storage Microservice Description:
+Data Storage Microservice Description: This microservice stores and retrieves data a text-file.
 
 communication contract:
 
