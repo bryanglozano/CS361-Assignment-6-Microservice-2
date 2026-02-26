@@ -74,6 +74,24 @@ Example call (invalid):
   "details": ["error message"]
 }
 
+How to run:
+1. Clone the repository
+2. Make sure you're in the repository root folder (do not run inside /src, /tests, or /pipe)
+3. Open a command prompt/terminal and enter:
+
+- python3 src/microservice.py (Linux/Mac)
+- python src\microservice.py (Windows)
+
+4. Output should look like this:
+Data Storage Microservice running...
+Request file: pipe/storage_request.txt
+Response file: pipe/storage_response.txt
+
+5. Open a second command prompt/terminal and run the test client:
+- python3 tests/test_client.py (Linux/Mac)
+- python tests\test_client.py
+
+6. Output should be something similar to this: {'ok': False, 'action': 'get', 'id': 'missing_id', 'error': 'not_found'}
 
 UML sequence diagram:
 
