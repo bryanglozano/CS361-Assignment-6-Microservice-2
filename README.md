@@ -51,7 +51,16 @@ Clear instructions for how to programmatically RECEIVE data from the microservic
 
 The microservice writes a JSON response to: pipe/storage_response.txt
 
-Example call:
+Example call(valid WRITE):
+Example call(valid GET):
+
+Example call (invalid): 
+{
+  "ok": false,
+  "error": "invalid_request",
+  "details": ["error message"]
+}
+
 
 UML sequence diagram:
 
