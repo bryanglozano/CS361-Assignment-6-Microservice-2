@@ -11,3 +11,5 @@ Clear instructions for how to programmatically RECEIVE data from the microservic
 Example call:
 
 UML sequence diagram:
+
+Note: run from repo root
