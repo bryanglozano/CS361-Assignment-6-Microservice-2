@@ -15,13 +15,41 @@ communication contract:  This is a text-file based communication, meaning:
 - response file: pipe/storage_response.txt
 - Both are json formatted text
 
-microservice 2 description:
-
 Clear instructions for how to programmatically REQUEST data from the microservice:
+
+1. Open pipe/storage_request.txt
+2. write json object
+3. save & close the file
+
+Request formats:
+
+Write request:
+{
+  "action": "write",
+  "id": "unique_id",
+  "data": {...}
+}
+
+Get request:
+{
+  "action": "get",
+  "id": "unique_id"
+}
 
 Example call:
 
+{
+  "action": "write",
+  "id": "workout_001",
+  "data": {
+    "exercise": "Run",
+    "minutes": 30
+  }
+}
+
 Clear instructions for how to programmatically RECEIVE data from the microservice:
+
+The microservice writes a JSON response to: pipe/storage_response.txt
 
 Example call:
 
