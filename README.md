@@ -12,4 +12,6 @@ Example call:
 
 UML sequence diagram:
 
-Note: run from repo root
+Note to run from repo root:
+py src/microservice.py
+py tests/test_client.py
