@@ -9,7 +9,11 @@ it ensures:
 - invalid requests are handled
 
 This microservice communicates using text files, not direct function calls. The test file simulates a main program using the microservice.
-communication contract:
+
+communication contract:  This is a text-file based communication, meaning:
+- request file: pipe/storage_request.txt
+- response file: pipe/storage_response.txt
+- Both are json formatted text
 
 microservice 2 description:
 
