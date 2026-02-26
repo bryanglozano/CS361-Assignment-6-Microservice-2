@@ -51,8 +51,21 @@ Clear instructions for how to programmatically RECEIVE data from the microservic
 
 The microservice writes a JSON response to: pipe/storage_response.txt
 
-Example call(valid WRITE):
+Example call(valid WRITE): 
+{
+  "ok": true,
+  "action": "write",
+  "id": "workout_1",
+  "message": "stored"
+}
+
 Example call(valid GET):
+{
+  "ok": true,
+  "action": "get",
+  "id": "workout_1",
+  "data": {...}
+}
 
 Example call (invalid): 
 {
