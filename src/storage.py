@@ -46,7 +46,7 @@ def process_request(req: Dict[str, Any]) -> Dict[str, Any]:
             "id": id,
             "message": "stored"
         }
-  if _id not in store:
+  if id not in store:
         return {
             "ok": False,
             "action": "get",
