@@ -34,6 +34,7 @@ def main() -> None:
     REQ.touch(exist_ok=True)
     RES.touch(exist_ok=True)
     clear_response()
+    time.sleep(0.2)
 
     send({
         "action": "write",
@@ -42,6 +43,7 @@ def main() -> None:
     })
     print("WRITE ->", wait_for_response())
     clear_response()
+    time.sleep(0.2)
 
     send({
         "action": "get",
@@ -49,6 +51,7 @@ def main() -> None:
     })
     print("GET ->", wait_for_response())
     clear_response()
+    time.sleep(0.2)
 
     send({
         "action": "get",
@@ -56,6 +59,7 @@ def main() -> None:
     })
     print("GET missing ->", wait_for_response())
     clear_response()
+    time.sleep(0.2)
 
 
 if __name__ == "__main__":
